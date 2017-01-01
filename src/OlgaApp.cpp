@@ -341,7 +341,7 @@ void OlgaApp::draw()
 	mGlsl->uniform("iGlobalTime", (float)getElapsedSeconds());
 	mGlsl->uniform("iResolution", vec3(mVDSettings->mFboWidth, mVDSettings->mFboHeight, 1.0));
 
-	gl::drawSolidTriangle(mVertices, mTexVertices);
+	gl::drawSolidTriangle(mVertices);// , mTexVertices);
 
 	// imgui
 	if (!mVDSettings->mCursorVisible) return;
